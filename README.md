@@ -1,13 +1,13 @@
 # Google-Data-Analytics-Capstone-Project
 
-INTRODUCTION 
+##INTRODUCTION 
 For the capstone project, I have selected the Cyclistic bike share analysis case study to work on. For the case study, I will perform the real-world tasks of a junior data analyst for marketing team at Cyclistic, a fictional bike share company in Chicago.
 To answer the key business questions, I followed the six steps of the data analysis process taught in the course which are : Ask, Prepare, Process, Analyse, Share and Act.
 •	Detailed documentation of code is available here (Github link).
 •	Data cleaning, validation, and exploration using MS SQL.
 •	Data visualization using Tableau Public. 
 
-BACKGROUND 
+##BACKGROUND 
 Cyclistic: A bike-share program that features more than 5,800 bicycles and 600 docking stations. Cyclistic sets itself apart by also offering reclining bikes, hand tricycles, and cargo bikes, making bike-share more inclusive to people with disabilities and riders who can’t use a standard two-wheeled bike. The majority of riders opt for traditional bikes; about 8% of riders use the assistive options. Cyclistic users are more likely to ride for leisure, but about 30% use them to commute to work each day. 
 
 Lily Moreno: The director of marketing and your manager. Moreno is responsible for the development of campaigns and initiatives to promote the bike-share program. These may include email, social media, and other channels. 
@@ -31,7 +31,7 @@ Monero believes company’s future success depends on maximizing the number of a
 
 Need to build up strategy to convert casual riders into annual members through the help of data analysis.
 
-PREPARE
+##PREPARE
 In this step, we prepare the data by obtaining the dataset and storing it. The datasets are given as a monthly based trip data in .zip files. The data I will be analysing will be of 12 months (i.e from December 2021 – November 2021). The data is reliable, free of any bias, and has been collected by cyclistic and stored on the company’s database separated by month in CSV format. 
 The data collection team at Cyclistic have outlined some key facts about data:
 1.	Each month contains every single trip that took place during that period.
@@ -42,7 +42,7 @@ The data collection team at Cyclistic have outlined some key facts about data:
 If you would like to explore the original data, the dataset can be found here.
 
 
-PROCESS
+##PROCESS
 To combine the 12 csv files and clean the data, I used Microsoft SQL Server platform. Below is the outline of my process.
 IMPORTING AND COMBINING DATA
 •	Created a dataset called “Cyclistic” and created a table called “Cyclistic_data” keeping column names same as that in the csv files provided, and using appropriate datatype.
@@ -80,7 +80,7 @@ A Summary of data cleaning steps:
 Altering and Updating some new columns:
 Added some new columns that might help me in further analysing the data. These columns were of ride_length (tell the duration of ride) and day_of_week (tell weekdays in numbers, starting from Sunday as 1 ending at Saturday as 7).
  
-ANALYZE AND SHARE
+##ANALYZE AND SHARE
 After cleaning of the data, I started analysing it in MS SQL Server. I analysed it by sorting, filtering, and aggregating it before importing it to tableau to create visualizations. 
 My SQL analysis can be viewed from here.
 My tableau visualizations can be viewed from here.
@@ -88,7 +88,6 @@ My tableau visualizations can be viewed from here.
 Some examples of the queries can be seen below:
  
  
-
 Insights of Tableau Analysis
 A Summary of all the visuals from the Tableau: -
 1.	Number of rides starts increasing from the month of April and the highest goes till July. It starts decreasing from August onwards and drops rapidly in November, and continues to drop till February, Feb having the lowest number of rides.
@@ -101,7 +100,7 @@ A Summary of all the visuals from the Tableau: -
 8.	Afternoons, Evenings, and Mornings are the time of the weekdays where members take most number of rides as compared to casuals. Whereas afternoon time are the active hours for casual riders and there are more rides seen by them as compared to members.
 9.	Annual members are mostly riders riding Cyclistic bikes for trips during weekdays maybe to get to work and casual riders ride more on weekends for leisure.
 
-ACT/RECOMMENDATIONS 
+##ACT/RECOMMENDATIONS 
 With the above knowledge of the differences between the two customer segments (casuals and annual members), I have brought up one potential issue below. The marketing department can start to develop its strategy of converting casual members to annual members.
 Issue: A large percentage of the casual riders are most likely tourists visiting Chicago who cannot be converted into annual members.
 The following are some recommendations from my side for the marketing team so that they can target at converting local residents who are casual members into long-term members:
