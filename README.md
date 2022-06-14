@@ -42,34 +42,35 @@ The data collection team at Cyclistic have outlined some key facts about data:
 3.	Classic bikes were previously labelled ‘docked bikes’, they refer to same thing
 4.	Classic bikes must start and end at a docking station, whereas electric bikes have a bike locked up anywhere in the general vicinity of a docking station.
 5.	The data should not have no trips shorter than 1 minute or longer than 1 day. Any data that does not fit these constraints should be removed as it is a maintenance trip carried out by the Cyclistic team, or the bike has been stolen.
+
 If you would like to explore the original data, the dataset can be found here.
 
 
 ## PROCESS
 To combine the 12 csv files and clean the data, I used Microsoft SQL Server platform. Below is the outline of my process.
 ### IMPORTING AND COMBINING DATA
-•	Created a dataset called “Cyclistic” and created a table called “Cyclistic_data” keeping column names same as that in the csv files provided, and using appropriate datatype.
+-	Created a dataset called “Cyclistic” and created a table called “Cyclistic_data” keeping column names same as that in the csv files provided, and using appropriate datatype.
 
   
 
-•	Imported data from all the 12 csv files, using CURSOR and BULK INSERT statement resulting in all the data being combined into this one table I created above. The table contained 5,479,096 rows and 13 columns.
+-	Imported data from all the 12 csv files, using CURSOR and BULK INSERT statement resulting in all the data being combined into this one table I created above. The table contained 5,479,096 rows and 13 columns.
 
  
 
-•	Added some new columns that might help me in further analysing the data. These columns were of ride_length (tell the duration of ride) and day_of_week (tell weekdays in numbers, starting from Sunday as 1 ending at Saturday as 7).
+-	Added some new columns that might help me in further analysing the data. These columns were of ride_length (tell the duration of ride) and day_of_week (tell weekdays in numbers, starting from Sunday as 1 ending at Saturday as 7).
 
  
 
 ### PRE-CLEANING EXPLORATION
 To know the data more, I ran queries on each column and made notes of the data that needs to be cleaned. My pre-cleaning data exploration process in MS SQL Server can be seen here on Github.
 Following is a quick summary of my findings:-
-1.	ride_id: it is the primary key, having no duplicates, and each id has exactly 16 characters, i.e they are same in length.
-2.	rideable_type: the data contains three types of bikes- classic, docked, and electric. However, as specified by the data collection team, ‘docked bike’ is the old name for ‘classic bike’.
-3.	started_at/ended_at: shows date and time of bike rides that started and ended. Although we only need rides greater than 1 minute and less than a day.
-4.	start_station_id/end_station_id: these are of no use to us as of now, at do no harm. Therefore, they will remain as it is.
-5.	start_station_name/end_station_name: as the name suggests, it contains station names of bike rides started and ended at. Rows having null values all together in start/end station names and ids will be removed.
-6.	start_lat/end_lat and start_lng/end_lng: these contains starting and ending location of bike rides. Any null values in these columns will be removed as if a bike is taken for a ride it should have its starting and ending location.
-7.	member_casual: this indicates whether the user of the bike is a casual user or an annual member. There are only two types in the column- ‘casual’ and ‘member’.
+1.	**ride_id:** it is the primary key, having no duplicates, and each id has exactly 16 characters, i.e they are same in length.
+2.	**rideable_type:** the data contains three types of bikes- classic, docked, and electric. However, as specified by the data collection team, ‘docked bike’ is the old name for ‘classic bike’.
+3.	**started_at/ended_at:** shows date and time of bike rides that started and ended. Although we only need rides greater than 1 minute and less than a day.
+4.	**start_station_id/end_station_id:** these are of no use to us as of now, at do no harm. Therefore, they will remain as it is.
+5.	**start_station_name/end_station_name:** as the name suggests, it contains station names of bike rides started and ended at. Rows having null values all together in start/end station names and ids will be removed.
+6.	**start_lat/end_lat and start_lng/end_lng:** these contains starting and ending location of bike rides. Any null values in these columns will be removed as if a bike is taken for a ride it should have its starting and ending location.
+7.	**member_casual:** this indicates whether the user of the bike is a casual user or an annual member. There are only two types in the column- ‘casual’ and ‘member’.
 
 
 
@@ -80,7 +81,8 @@ A Summary of data cleaning steps:
 1.	Removed rows where start/end station names and start/end station ids were NULL.
 2.	Removed rows having NULL values in start/end latitude and longitude columns, as start/end location of bike should be mentioned. 
 3.	In total 401,836 rows were removed, and now the cleaned data was of 5,077,260 rows in total.
-Altering and Updating some new columns:
+
+**Altering and Updating some new columns:**
 Added some new columns that might help me in further analysing the data. These columns were of ride_length (tell the duration of ride) and day_of_week (tell weekdays in numbers, starting from Sunday as 1 ending at Saturday as 7).
  
 ## ANALYZE AND SHARE
@@ -91,7 +93,7 @@ My tableau visualizations can be viewed from here.
 Some examples of the queries can be seen below:
  
  
-Insights of Tableau Analysis
+**Insights of Tableau Analysis**
 A Summary of all the visuals from the Tableau: -
 1.	Number of rides starts increasing from the month of April and the highest goes till July. It starts decreasing from August onwards and drops rapidly in November, and continues to drop till February, Feb having the lowest number of rides.
 2.	Summers (Jun-Aug) is the season where there are highest number of rides seen by both type of riders (casual and members).
