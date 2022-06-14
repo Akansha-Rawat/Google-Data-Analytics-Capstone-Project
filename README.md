@@ -57,7 +57,7 @@ To combine the 12 csv files and clean the data, I used Microsoft SQL Server plat
 
  
 
-PRE-CLEANING EXPLORATION
+### PRE-CLEANING EXPLORATION
 To know the data more, I ran queries on each column and made notes of the data that needs to be cleaned. My pre-cleaning data exploration process in MS SQL Server can be seen here on Github.
 Following is a quick summary of my findings:-
 1.	ride_id: it is the primary key, having no duplicates, and each id has exactly 16 characters, i.e they are same in length.
@@ -70,7 +70,7 @@ Following is a quick summary of my findings:-
 
 
 
-CLEANING
+### CLEANING
 After pre-cleaning process, I was aware of what data needs to be cleaned. The code for cleaning can be viewd from here. 
  
 A Summary of data cleaning steps:
