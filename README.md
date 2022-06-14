@@ -25,8 +25,10 @@ Three questions will guide the future marketing program:
 
 **Identify the business task:**
 Strategy to maximize the number of annual memberships by converting casual riders into annual riders.
+
 **Consider key stakeholders:**
 Lily Monero & the executive team
+
 **Stakeholder perspective:**
 Monero believes company’s future success depends on maximizing the number of annual memberships. She believes rather than creating a marketing campaign targeting all the new customers, there is a very good chance to convert casual riders into members. 
 
