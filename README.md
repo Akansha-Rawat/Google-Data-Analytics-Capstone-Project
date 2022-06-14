@@ -44,7 +44,7 @@ If you would like to explore the original data, the dataset can be found here.
 
 ## PROCESS
 To combine the 12 csv files and clean the data, I used Microsoft SQL Server platform. Below is the outline of my process.
-IMPORTING AND COMBINING DATA
+### IMPORTING AND COMBINING DATA
 •	Created a dataset called “Cyclistic” and created a table called “Cyclistic_data” keeping column names same as that in the csv files provided, and using appropriate datatype.
 
   
