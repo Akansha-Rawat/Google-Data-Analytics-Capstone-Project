@@ -2,7 +2,7 @@
 
 ## INTRODUCTION 
 For the capstone project, I have selected the Cyclistic bike share analysis case study to work on. For the case study, I will perform the real-world tasks of a junior data analyst for marketing team at Cyclistic, a fictional bike share company in Chicago.
-To answer the key business questions, I followed the six steps of the data analysis process taught in the course which are : Ask, Prepare, Process, Analyse, Share and Act.
+To answer the key business questions, I followed the six steps of the data analysis process taught in the course which are : **Ask, Prepare, Process, Analyse, Share and Act**.
 •	Detailed documentation of code is available here (Github link).
 •	Data cleaning, validation, and exploration using MS SQL.
 •	Data visualization using Tableau Public. 
