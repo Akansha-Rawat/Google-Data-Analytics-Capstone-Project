@@ -16,18 +16,18 @@ To answer the key business questions, I followed the six steps of the data analy
 
 **Cyclistic executive team:** The notoriously detail-oriented executive team will decide whether to approve the recommended marketing program.
 
-ASK
-Questions to analyse:
+## ASK
+**Questions to analyse:**
 Three questions will guide the future marketing program: 
 1.	How do annual members and casual riders use Cyclistic bikes differently? 
 2.	Why would casual riders buy Cyclistic annual memberships? 
 3.	How can Cyclistic use digital media to influence casual riders to become members?
 
-Identify the business task:
+**Identify the business task:**
 Strategy to maximize the number of annual memberships by converting casual riders into annual riders.
-Consider key stakeholders:
+**Consider key stakeholders:**
 Lily Monero & the executive team
-Stakeholder perspective:
+**Stakeholder perspective:**
 Monero believes company’s future success depends on maximizing the number of annual memberships. She believes rather than creating a marketing campaign targeting all the new customers, there is a very good chance to convert casual riders into members. 
 
 Need to build up strategy to convert casual riders into annual members through the help of data analysis.
